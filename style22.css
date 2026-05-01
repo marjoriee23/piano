@@ -1,0 +1,41 @@
+body{
+	background-color: #FFFDD0;
+	color: #000000;
+}
+
+h1{
+	text-align: center;
+	font-size :74px ;
+}
+li{
+	font-size :48px ;
+}
+
+img{
+	float:right;
+	margin-left: 10%;
+
+	float:left;
+	margin-right: 10%;
+
+}
+
+p{
+font-size :25px 
+}
+
+h2{
+	font-size :30px
+	
+}
+@media screen and (min-width: 80rem) {
+  .container {
+    margin: 1em 2em;
+  }
+}
+
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+	

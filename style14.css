@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#quiz-container {
+  background: white;
+  max-width: 600px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #3c3489;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+#question-num {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+#question {
+  font-size: 18px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+#choices {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#choices button {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 15px;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#choices button:hover:not(:disabled) {
+  background: #f0eeff;
+  border-color: #534AB7;
+}
+
+#choices button.correct {
+  background: #e6f4d7;
+  border-color: #3b6d11;
+  color: #27500a;
+}
+
+#choices button.wrong {
+  background: #fde8e8;
+  border-color: #a32d2d;
+  color: #791f1f;
+}
+
+#feedback {
+  margin-top: 16px;
+  font-size: 14px;
+  line-height: 1.6;
+  padding: 12px;
+  border-radius: 8px;
+  display: none;
+}
+
+#feedback.ok {
+  background: #e6f4d7;
+  border: 1px solid #3b6d11;
+  color: #27500a;
+  display: block;
+}
+
+#feedback.ko {
+  background: #fde8e8;
+  border: 1px solid #a32d2d;
+  color: #791f1f;
+  display: block;
+}
+
+#next-btn {
+  margin-top: 20px;
+  background: #534AB7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 15px;
+  cursor: pointer;
+  float: right;
+}
+
+#next-btn:hover {
+  background: #3c3489;
+}
+
+#score-box {
+  text-align: center;
+}
+
+#score-box h2 {
+  font-size: 22px;
+  color: #3c3489;
+  margin-bottom: 10px;
+}
+
+#score-box p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+#score-box .score-num {
+  font-size: 52px;
+  font-weight: bold;
+  color: #534AB7;
+}
+
+#restart-btn {
+  background: transparent;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px 22px;
+  font-size: 15px;
+  cursor: pointer;
+  color: #444;
+}
+
+#restart-btn:hover {
+  background: #f0f0f0;
+}
+@media screen and (min-width: 80rem) {
+  .container {
+    margin: 1em 2em;
+  }
+}
+
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+footer {
+  margin-top: auto;
+  padding: 15px;
+  text-align: center;
+}
